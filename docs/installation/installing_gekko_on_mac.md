@@ -9,7 +9,7 @@ Here is a video of me explaining how to install Gekko the easiest way possible:
 
 To get Gekko running you need to do the following:
 
-- set rights on your machine accordingly
+- set rights on your machine so that you have write rights for the gekko folder and all subsequent folders
 - set energy saver preferences on your mac accordingly
 - install nodejs
 - install git
@@ -34,6 +34,14 @@ The recommended way of downloading Gekko is by using git. This makes keeping Gek
 This will download the latest stable version of Gekko, remove the final `-b stable` part to download the current latest release (which might not be as stable).
 
 Alternatively you can manually download the latest stable version of Gekko on the [releases page](https://github.com/askmike/gekko/releases).
+
+## Set file permissions for the Gekko folder and all subsequent folders
+
+Once you have Gekko downloaded you need to navigate to the gekko folder and make sure that file permissions are set correctly for the Gekko tree. You can do this via terminal:
+
+    sudo chmod -R 777 ~/gekko
+
+This will take care of the gekko folder and all subsequent folders.
 
 ## Installing Gekko's dependencies
 
