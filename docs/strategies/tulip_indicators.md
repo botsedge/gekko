@@ -130,7 +130,7 @@ Required parameters:
 
 ### adxr
 
-The Average Directional Movement Index Rating is used as a risk indicator for commodities in an [adx]#adx system. It evaluates the risk (volatility) of a commodity by smoothing the amplitude readings of the trend function of the adx. It is calculated as follows
+The Average Directional Movement Index Rating is used as a risk indicator for commodities in an [adx](#adx) system. It evaluates the risk (volatility) of a commodity by smoothing the amplitude readings of the trend function of the adx. It is calculated as follows
 
     ADX plus the ADX (n-time periods ago) divided by 2
 
