@@ -199,7 +199,11 @@ Required parameters:
 
 ### bop
 
-The Balance of Power indicator measures the market strength of buyers against sellers by assessing the ability of each side to drive prices to an extreme level. The calculation is: Balance of Power = (Close price – Open price) / (High price – Low price) The resulting value can be smoothed by a moving average.
+The Balance of Power indicator measures the market strength of buyers against sellers by assessing the ability of each side to drive prices to an extreme level. The calculation is: 
+
+    Balance of Power = (Close price – Open price) / (High price – Low price) 
+    
+   The resulting value can be smoothed by a moving average.
 
 This indicator does not require any parameters.
 
