@@ -122,6 +122,8 @@ Required parameters:
 
 ### adx
 
+More information on the [Average Directonal Movement Index](https://en.wikipedia.org/wiki/Average_directional_movement_index)
+
 Required parameters:
 
  - optInTimePeriod
