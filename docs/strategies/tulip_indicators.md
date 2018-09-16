@@ -130,11 +130,20 @@ Required parameters:
 
 ### adxr
 
+The Average Directional Movement Index Rating is used as a risk indicator for commodities in an [adx]#adx system. It evaluates the risk (volatility) of a commodity by smoothing the amplitude readings of the trend function of the adx. It is calculated as follows
+
+    ADX plus the ADX (n-time periods ago) divided by 2
+
+Higher readings conform to lower risk and lower readings conform to higher risk.
+A investor wanting to lower the portfolio risk will therefore use commodities with higher adxr ratings.
+
 Required parameters:
 
  - optInTimePeriod
 
 ### ao
+
+More information about the [Awesome Oscillator](https://www.tradingview.com/wiki/Awesome_Oscillator_(AO))
 
 This indicator does not require any parameters.
 
