@@ -9,11 +9,11 @@ Here is a video of me explaining how to install Gekko the easiest way possible:
 
 To get Gekko running you need to do the following:
 
-- set file permissions on your machine so that you have write rights for the gekko folder and all subsequent folders
-- set energy saver preferences on your mac to never sleep
 - install nodejs
 - install git
 - download Gekko
+- set file permissions on your machine so that you have write rights for the gekko folder and all subsequent folders
+- set energy saver preferences on your mac to never sleep
 - install Gekko & Gekko Broker dependencies
 
 ## Installing nodejs
@@ -46,7 +46,8 @@ This will take care of the gekko folder and all subsequent folders.
 ## Set Energy Saver Preferences on your Mac
 
 In order for Gekko to work correctly you have to set the energy saver preferences on your mac. 
-Open System Preferences and go to the little light bulb that says "energy saver"
+Open System Preferences and go to the little light bulb that says "energy saver".
+
 On Mojave set the option
     
     Prevent the computer from sleeping automatically when the display is off
