@@ -166,11 +166,15 @@ Required parameters:
 
 ### aroonosc
 
+The Aroon Oscillator belongs to the group of trend-following indicators and uses parts of the Aroon Indicator (namely "Aroon Up" and "Aroon Down") to indicate the strength of a current trend and the likelihood that it will continue. The Aroon Oscillator is calculated by subtracting Aroon Up from Aroon Down. Readings above zero indicate that an uptrend is present, while readings below zero indicate that a downtrend is present.
+
 Required parameters:
 
  - optInTimePeriod
 
 ### atr
+
+More information about the [Average True Range](https://www.tradingview.com/wiki/Average_True_Range_(ATR))
 
 Required parameters:
 
@@ -178,9 +182,15 @@ Required parameters:
 
 ### avgprice
 
+The average price indicator calculates the mean of the open, high, low, and close of a bar
+
+    open + high + low + close / 4
+
 This indicator does not require any parameters.
 
 ### bbands
+
+More information about [Bollinger Bands](https://www.tradingview.com/wiki/Bollinger_Bands_(BB))
 
 Required parameters:
 
@@ -189,9 +199,13 @@ Required parameters:
 
 ### bop
 
+The Balance of Power indicator measures the market strength of buyers against sellers by assessing the ability of each side to drive prices to an extreme level. The calculation is: Balance of Power = (Close price – Open price) / (High price – Low price) The resulting value can be smoothed by a moving average.
+
 This indicator does not require any parameters.
 
 ### cci
+
+More information about the [Commodity Channel Index](https://www.tradingview.com/wiki/Commodity_Channel_Index_(CCI))
 
 Required parameters:
 
