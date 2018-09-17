@@ -217,11 +217,23 @@ Required parameters:
 
 ### cmo
 
+The Chande Momentum Oscillator is a technical momentum indicator. The indicator is created by calculating the difference between the sum of all recent higher closes and the sum of all recent lower closes and then dividing the result by the sum of all price movement over a given time period. The result is multiplied by 100 to give the -100 to +100 range. The defined time period is usually 20 periods.
+
+    CMO = 100 * ((Sh - Sd)/ ( Sh + Sd ) )
+
+Where:
+
+Sh = Sum of the difference between the current close and previous close on up days for the specified period. Up days are days when the current close is greater than the previous close.
+
+Sd = Sum of the absolute value of the difference between the current close and the previous close on down days for the specified period. Down days are days when the current close is less than the previous close.
+
 Required parameters:
 
  - optInTimePeriod
 
 ### cvi
+
+More information about the [Chaikin Volatility Index](https://www.tradingview.com/wiki/Chaikin_Oscillator) also called the Chaikin Oscillator
 
 Required parameters:
 
@@ -229,11 +241,15 @@ Required parameters:
 
 ### dema
 
+More information about the [DEMA](https://en.wikipedia.org/wiki/Double_exponential_moving_average)
+
 Required parameters:
 
  - optInTimePeriod
 
 ### di
+
+More information about the [Directional Indicator](https://en.wikipedia.org/wiki/Average_directional_movement_index)
 
 Required parameters:
 
@@ -241,11 +257,15 @@ Required parameters:
 
 ### dm
 
+More information about the [Directional Movement Index](https://en.wikipedia.org/wiki/Average_directional_movement_index)
+
 Required parameters:
 
  - optInTimePeriod
 
 ### dpo
+
+More information about the [Detrended Price Oscillator](https://en.wikipedia.org/wiki/Detrended_price_oscillator)
 
 Required parameters:
 
@@ -253,11 +273,22 @@ Required parameters:
 
 ### dx
 
+More information about the [Directional Movement Index](https://en.wikipedia.org/wiki/Average_directional_movement_index)
+
 Required parameters:
 
  - optInTimePeriod
 
 ### ema
+
+Exponential Moving Average (EMA) is similar to Simple Moving Average (SMA), measuring trend direction over a period of time. However, whereas SMA simply calculates an average of price data, EMA applies more weight to data that is more current. Because of its unique calculation, EMA will follow prices more closely than a corresponding SMA.
+
+    EMA = (K x (C - P)) + P
+
+Where: 
+C = Current Price 
+P = Previous periods EMA (A SMA is used for the first periods calculations) 
+K = Exponential smoothing constant
 
 Required parameters:
 
@@ -265,9 +296,21 @@ Required parameters:
 
 ### emv
 
+More information about the [Easo of Movement](https://www.tradingview.com/wiki/Ease_of_Movement_(EOM))
+
 This indicator does not require any parameters.
 
 ### fisher
+
+The Fisher Transform is a technical indicator that converts prices into a Gaussian normal distribution. The indicator enables traders to create a nearly Gaussian probability density function by normalizing prices. That is, the transformation makes peak swings relatively rare events and unambiguously identifies price reversals on a chart. 
+
+    Y = 0.5 * ln ((1+X)/(1-X)).
+ 
+Where:
+
+"ln" denotes the abbreviated form of the natural logarithm.
+
+"X" denotes the transformation of price to a level between -1 and 1 for ease of calculation
 
 Required parameters:
 
