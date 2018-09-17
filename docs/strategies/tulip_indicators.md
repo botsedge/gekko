@@ -352,6 +352,8 @@ Required parameters:
 
 ### kvo
 
+The Klinger Volume Oscillator measures trends of money flows based upon volume. The KO is derived from three types of data: the high-low price range, volume, and accumulation/distribution. Price range is a measure of movement and the force behind that movement is volume. Accumulation is when the sum of today's [high]+[low]+[close] is greater than yesterday's. Distribution is when today's sum is less than the yesterday's. When the sums are equal, the existing trend is maintained.
+
 Required parameters:
 
  - optInFastPeriod
@@ -359,11 +361,15 @@ Required parameters:
 
 ### linreg
 
+The Linear Regression is a smoothing functions that works by preforming linear least squares regression over a moving window. It then uses the linear model to predict the value for the current bar
+
 Required parameters:
 
  - optInTimePeriod
 
 ### linregintercept
+
+More information about the [Linear Regression Intercept](https://en.wikipedia.org/wiki/Simple_linear_regression)
 
 Required parameters:
 
@@ -371,11 +377,15 @@ Required parameters:
 
 ### linregslope
 
+More information about the [Linear Regression Intercept](https://en.wikipedia.org/wiki/Simple_linear_regression)
+
 Required parameters:
 
  - optInTimePeriod
 
 ### macd
+
+More information about the [MACD](https://www.tradingview.com/wiki/MACD_(Moving_Average_Convergence/Divergence))
 
 Required parameters:
 
@@ -384,6 +394,8 @@ Required parameters:
  - optInSignalPeriod
 
 ### marketfi
+
+The Market Facilitation Index indicator combines price and volume in the analysis to establish the effectiveness of price movement by computing the price movement per volume unit. To calculate the Market Facilitation Index indicator the difference between the low and the high price are taken and divided by the volume.
 
 This indicator does not require any parameters.
 
