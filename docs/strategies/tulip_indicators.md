@@ -296,7 +296,7 @@ Required parameters:
 
 ### emv
 
-More information about the [Easo of Movement](https://www.tradingview.com/wiki/Ease_of_Movement_(EOM))
+More information about the [Ease of Movement](https://www.tradingview.com/wiki/Ease_of_Movement_(EOM))
 
 This indicator does not require any parameters.
 
@@ -318,17 +318,33 @@ Required parameters:
 
 ### fosc
 
+The forecast oscillator attempts to predict price action by comparing the results of a linear regression trendline to the actual price for that day. Positive values of the oscillator occur when the forecast price is above the actual price and negative values when the forecast price is below. If prices are consistently below the forecast, then a downturn in prices is likely. Conversely, if prices are consistently above the forecast then an upturn in prices is likely.
+
 Required parameters:
 
  - optInTimePeriod
 
 ### hma
 
+Basic forms of moving averages like the Simple Moving Average lag price. The Exponential and Weighted Moving Averages were developed to address this lag by placing more emphasis on more recent data. The Hull Moving Average in contrast is an extremely fast and smooth moving average, it almost eliminates lag altogether and manages to improve smoothing at the same time.
+
+    HMA= WMA(2*WMA(n/2) − WMA(n)),sqrt(n))
+
 Required parameters:
 
  - optInTimePeriod
 
 ### kama
+
+The Kaufman adaptive moving average belongs to the group of "intelligent" indicators. It´s concept addresses the fact that noisy markets should have a lagging indicator and trending markets should have a leading indicator. So it adapts itself to lag in sideways markets and lead in trending markets.
+
+    KAMA(t) = KAMA(t-1) + sc(t) x (Price-KAMA(t-1))
+
+Where:
+KAMA(t) is the new adaptive moving average value
+KAMA(t-1) is the previous adaptive moving average value
+Price is the current price
+sc(t) is the smoothing constant
 
 Required parameters:
 
