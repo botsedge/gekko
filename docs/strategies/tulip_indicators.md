@@ -122,7 +122,7 @@ Required parameters:
 
 ### adx
 
-More information on the [Average Directonal Movement Index](https://en.wikipedia.org/wiki/Average_directional_movement_index)
+More information on the [**Average Directonal Movement Index**](https://en.wikipedia.org/wiki/Average_directional_movement_index)
 
 Required parameters:
 
@@ -130,7 +130,7 @@ Required parameters:
 
 ### adxr
 
-The Average Directional Movement Index Rating is used as a risk indicator for a security in an [adx](#adx) system. It evaluates the risk (volatility) of a security by smoothing the amplitude readings of the trend function of the adx. It is calculated as follows
+The **Average Directional Movement Index Rating** is used as a risk indicator for a security in an [adx](#adx) system. It evaluates the risk (volatility) of a security by smoothing the amplitude readings of the trend function of the adx. It is calculated as follows
 
     ADX plus the ADX (n-time periods ago) divided by 2
 
@@ -143,13 +143,13 @@ Required parameters:
 
 ### ao
 
-More information about the [Awesome Oscillator](https://www.tradingview.com/wiki/Awesome_Oscillator_(AO))
+More information about the [**Awesome Oscillator**](https://www.tradingview.com/wiki/Awesome_Oscillator_(AO))
 
 This indicator does not require any parameters.
 
 ### apo
 
-The Absolute Price Oscillator displays the difference between two exponential moving averages of a security's price and is expressed as an absolute value. It rates the trends strength in relation to the moving between the two moving averages with short-term momentum being the catalyst.
+The **Absolute Price Oscillator** displays the difference between two exponential moving averages of a security's price and is expressed as an absolute value. It rates the trends strength in relation to the moving between the two moving averages with short-term momentum being the catalyst.
 
 Required parameters:
 
