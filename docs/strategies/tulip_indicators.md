@@ -401,15 +401,30 @@ This indicator does not require any parameters.
 
 ### mass
 
+The Mass Index indicator is used for finding trend reversals, based on the premise that reversals are likely to happen when the price range widens. It does not have a directional bias. The calculation, which compares the previous trading ranges (highs minus lows), uses Exponential Moving Averages (EMA). If there is substantial movement, the Mass Index Indicator increases if there is insubstantial movement the Mass Index Indicator decreases. 
+
+Formula (usually a 9 period EMA is used)
+
+    Single EMA = (x)-period exponential moving average (EMA) of the high-low differential  
+    Double EMA = (y)-period EMA of the (x)-period EMA of the high-low differential 
+    EMA Ratio = Single EMA divided by Double EMA 
+    Mass Index = 25-period sum of the EMA Ratio 
+
 Required parameters:
 
  - optInTimePeriod
 
 ### medprice
 
+The median price indicator calculates the mean of the high and low for a bar. Despite the name, it does not calculate an actual median value.
+
+    medprice(t) = (high(t) + low(t)) / 2
+
 This indicator does not require any parameters.
 
 ### mfi
+
+More information about the [MFI](https://www.tradingview.com/wiki/Money_Flow_(MFI))
 
 Required parameters:
 
@@ -417,17 +432,26 @@ Required parameters:
 
 ### msw
 
+The Maximum Entropy Spectrum Analysis indicator is a unique way to accurately measure short-term cycles in a market. It utilizes two sine plots to illustrate if the market is in a cycle mode or in a trend mode. When the two plots resemble a sine wave the market is in cycling mode. When the plots start to wander the market is in a trend mode. 
+The MESA Sine Wave indicator is a leading indicator that will anticipate cycle mode turning points rather than waiting for confirmation as is seen with most other oscillators. The indicator has the additional advantage that trend mode whipsaw signals are minimized.
+
 Required parameters:
 
  - optIn
 
 ### natr
 
+The Normalized Average True Range is a measure of volatility. It is calculated as follows:
+
+    natr = (atr(t) / close(t)) * 100
+
 Required parameters:
 
  - optInTimePeriod
 
 ### nvi
+
+More information about the [NVI](https://en.wikipedia.org/wiki/Negative_volume_index)
 
 This indicator does not require any parameters.
 
