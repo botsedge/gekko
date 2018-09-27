@@ -672,7 +672,7 @@ This indicator does not require any parameters.
 
 ### wilders
 
-The Welles Wilder Smoothing indicator is basically the same as an (#ema) and can be used in the same manner. It uses a different calculation but can be easily calculated by simply converting EMA values as follows:
+The Welles Wilder Smoothing indicator is basically the same as an [EMA](#ema) and can be used in the same manner. It uses a different calculation but can be easily calculated by simply converting EMA values as follows:
 
     wilders = (ema + 1) / 2
 
