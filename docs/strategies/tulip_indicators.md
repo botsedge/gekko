@@ -457,9 +457,13 @@ This indicator does not require any parameters.
 
 ### obv
 
+More information about the [OBV](https://www.tradingview.com/wiki/On_Balance_Volume_(OBV))
+
 This indicator does not require any parameters.
 
 ### ppo
+
+More information about the [PPO](https://www.tradingview.com/wiki/Price_Oscillator_(PPO))
 
 Required parameters:
 
@@ -468,6 +472,8 @@ Required parameters:
 
 ### psar
 
+More information about the [Parabolic SAR](https://www.tradingview.com/wiki/Parabolic_SAR_(SAR))
+
 Required parameters:
 
  - optInAcceleration
@@ -475,9 +481,13 @@ Required parameters:
 
 ### pvi
 
+More information about the [PVI](https://en.wikipedia.org/wiki/Negative_volume_index)
+
 This indicator does not require any parameters.
 
 ### qstick
+
+The Qstick Indicator identifies trends on a chart. It is calculated by taking an 'n' period moving average of the difference between the open and closing prices. A Qstick value greater than zero means that the majority of the last 'n' days have been up, indicating that buying pressure has been increasing. In summary, the measure provides an approximation for a security’s  EMA, opening price, closing price, and their difference, as well as these values SMA.
 
 Required parameters:
 
@@ -485,11 +495,15 @@ Required parameters:
 
 ### roc
 
+More information about the [Rate of Change](https://www.tradingview.com/wiki/Rate_of_Change_(ROC))
+
 Required parameters:
 
  - optInTimePeriod
 
 ### rocr
+
+Rate Of Change Ratio calculates the change between the current price and the price n bars ago.
 
 Required parameters:
 
@@ -497,17 +511,23 @@ Required parameters:
 
 ### rsi
 
+More information about the [RSI](https://www.tradingview.com/wiki/Relative_Strength_Index_(RSI))
+
 Required parameters:
 
  - optInTimePeriod
 
 ### sma
 
+More information about the [SMA](https://www.tradingview.com/wiki/Moving_Average)
+
 Required parameters:
 
  - optInTimePeriod
 
 ### stoch
+
+More information about the [STOCH](https://www.tradingview.com/wiki/Stochastic_(STOCH))
 
 Required parameters:
 
@@ -517,11 +537,19 @@ Required parameters:
 
 ### sum
 
+The Sum Over Period indicator simply returns the sum of the last n bars.
+
 Required parameters:
 
  - optInTimePeriod
 
 ### tema
+
+The Triple Exponential Moving Average is similar to the Exponential Moving Average or the Double Exponential Moving Average, but provides even less lag. Triple Exponential Moving Average is probably best viewed as an extension of Double Exponential Moving Average.
+
+It can be expressed in terms of the Exponential Moving Average as follows:
+
+    tema = 3 * ema(in) - 3 * ema(ema(in)) + ema(ema(ema(in)))
 
 Required parameters:
 
@@ -529,9 +557,19 @@ Required parameters:
 
 ### tr
 
+True range is a measure of volatility. It represents how much a security changed price on a given day.
+True range for each day is the greatest of:
+
+Day's high minus day's low
+The absolute value of the day's high minus the previous day's close
+The absolute value of the day's low minus the previous day's close
+
 This indicator does not require any parameters.
 
 ### trima
+
+The Triangular Moving Average is similar to the Simple Moving Average but instead places more weight on middle portion of the smoothing period and less weight on the newest and oldest bars in the period.
+It is calculated for each bar as the weighted arithmetic mean of the previous n bars. For example, the weights w for an n of 4 are: 1, 2, 2, 1. The weights w for a n of 7 are: 1, 2, 3, 4, 3, 2, 1. It's easy to see why it's called the Triangular Moving Average.
 
 Required parameters:
 
@@ -539,11 +577,7 @@ Required parameters:
 
 ### trix
 
-Required parameters:
-
- - optInTimePeriod
-
-### tsf
+More information about the [TRIX](https://www.tradingview.com/wiki/TRIX)
 
 Required parameters:
 
@@ -551,15 +585,21 @@ Required parameters:
 
 ### tsf
 
-Required parameters
+The Time Series Forecast indicator displays the statistical trend of a security's price over a specified time period. The trend is based on linear regression analysis. Rather than plotting a straight linear regression trendline, the Time Series Forecast plots the last point of multiple linear regression trendlines. The resulting TSF indicator is sometimes referred to as the "moving linear regression" indicator or the "regression oscillator."
+
+Required parameters:
 
  - optInTimePeriod
 
 ### typprice
 
+The Typical Price calculates the arithmetic mean of the high, low, and close of a bar.
+
 This indicator does not require any parameters.
 
 ### ultosc
+
+More information about the [UO](https://www.tradingview.com/wiki/Ultimate_Oscillator_(UO))
 
 Required parameters:
 
@@ -569,11 +609,15 @@ Required parameters:
 
 ### vhf
 
+The Vertical Horizontal Filter determines whether prices are in a trending phase or a congestion phase. It is used to dertermine which other indicators are to be used in the current market trend. For example if the VHF suggests the market is in a range then a [mesa] could be used if the VHF suggests the market is in a range then one could use a [psar] to determine entry and exit points.
+
 Required parameters
 
  - optInTimePeriod
 
 ### vidya
+
+The Variable Index Dynamic Average indicator modifies the Exponential Moving Average by varying the smoothness based on recent volatility.
 
 Required parameters
 
@@ -583,11 +627,15 @@ Required parameters
 
 ### volatility
 
+The Annualized Historical Volatility indicator calculates the volatility over a moving window.
+
 Required parameters:
 
  - optInTimePeriod
 
 ### vosc
+
+The Volume Oscillator identifies trends in volume using two moving averages of volume, one fast and one slow. The fast volume moving average is then subtracted from the slow moving average. 
 
 Required parameters
 
@@ -596,19 +644,37 @@ Required parameters
 
 ### vwma
 
+The Volume Weighted Moving Average is simalair to a Simple Moving Average, but it weights each bar by its volume.
+
 Required parameters:
 
  - optInTimePeriod
 
 ### wad
 
+Williams AD is a running sum of positive accumulation values (buying pressure) and negative distribution values (selling pressure), as determined by price's location within a given day's true range. The day's accumulation/distribution is then calculated by comparing today's closing price to yesterday's closing price.
+To calculate the Williams' Accumulation/Distribution indicator, determine:
+
+    True Range High (TRH) = Yesterday's close or today's high whichever is greater
+    True Range Low (TRL) = Yesterday's close or today's low whichever is less
+    
+The Williams' Accumulation/Distribution indicator is a cumulative total of the daily values:
+
+Williams A/D = Today's A/D + Yesterday's Williams A/D
+
 This indicator does not require any parameters.
 
 ### wcprice
 
+The weighted close price indicator calculates the mean of the high, low, and close of a bar, but the close price is weighted to count for double.
+
 This indicator does not require any parameters.
 
 ### wilders
+
+The Welles Wilder Smoothing indicator is basically the same as an [ema] and can be used in the same manner. It uses a different calculation but can be easily calculated by simply converting EMA values as follows:
+
+    wilders = (ema + 1) / 2
 
 Required parameters:
 
@@ -616,17 +682,23 @@ Required parameters:
  - 
 ### willr
 
+More information about the [Williams R](https://www.tradingview.com/wiki/Williams_%25R_(%25R))
+
 Required parameters:
 
  - optInTimePeriod
 
 ### wma
 
+More information about the [WMA](https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average)
+
 Required parameters:
 
  - optInTimePeriod
 
 ### zlema
+
+Zero-Lag Exponential Moving Average modifies a Exponential Moving Average to greatly reduce lag.
 
 Required parameters:
 
